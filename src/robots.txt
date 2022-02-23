@@ -1,0 +1,7 @@
+# All robots welcome!
+
+
+User-agent: *
+Allow: /
+
+Sitemap: https://manishsoftware.com/sitemap.xml

@@ -1,0 +1,672 @@
+<mat-drawer-container autosize>
+    <mat-drawer #drawer class="sidenav" mode="over">
+        <mat-nav-list style="padding-top: 0px;">
+            <a mat-list-item href="https://manishsoftware.com/">
+                <img alt="icon" class="icon" width="24" height="24"
+                    src="https://res.cloudinary.com/manish-software/image/upload/c_scale,w_128/v1630483566/website/manish-software-icon.webp">
+                <img alt="logo" class="logo" width="71" height="24"
+                    src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/images/ms5.png">
+            </a>
+
+
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('about')">
+                <div mat-line> About</div>
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('pricing')">
+                <div mat-line> Pricing</div>
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('how-we-work')">
+                <div mat-line>How we work </div>
+            </mat-list-item>
+            <!-- <mat-list-item (click)="drawer.toggle(); scrollToElement('faqs')">
+                <div mat-line>FAQs </div>
+            </mat-list-item> -->
+
+
+            <a mat-list-item rel="noopener" href="https://wa.me/message/L5WXALFTOQUHN1" target="_blank">WhatsApp</a>
+
+        </mat-nav-list>
+    </mat-drawer>
+
+    <mat-toolbar class="app-navbar">
+        <mat-toolbar-row>
+            <button fxShow fxHide.gt-sm="true" mat-icon-button (click)="drawer.toggle()">
+                <mat-icon svgIcon="menu"></mat-icon>
+            </button>
+
+            <span class="margin-left-10" fxHide fxShow.gt-sm="true"></span>
+
+
+
+            <a href="https://manishsoftware.com/" mat-button>
+                <img alt="icon" class="icon" width="24" height="24"
+                    src="https://res.cloudinary.com/manish-software/image/upload/c_scale,w_128/v1630483566/website/manish-software-icon.webp">
+                <img alt="logo" class="logo" width="71" height="24"
+                    src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/images/ms5.png">
+            </a>
+
+            <span class="right-spacer"></span>
+
+            <span fxHide fxShow.gt-sm="true">
+
+                <button mat-button (click)="scrollToElement('about')" class="menu">About</button>
+
+                <button mat-button (click)="scrollToElement('pricing')" class="menu">Pricing</button>
+
+                <button mat-button (click)="scrollToElement('how-we-work')" class="menu">How we work</button>
+
+                <a mat-button class="menu" rel="noopener" href="https://wa.me/message/L5WXALFTOQUHN1"
+                    target="_blank">WhatsApp</a>
+
+            </span>
+
+            <span class="right-spacer"></span>
+
+            <app-menu></app-menu>
+
+            <span class="margin-right-10" fxHide fxShow.gt-sm="true"></span>
+
+
+
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card id="top" class="mat-card-section mat-elevation-z0">
+        <mat-card-content>
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign=" center start" fxLayoutGap="32px">
+
+                <div fxFlex>
+
+
+                    <h1 class="mat-display-2 text-left">
+                        Best Affordable Custom Mobile App Development Services Company
+                    </h1>
+
+                    <p class="mat-subheading-2 light margin-bottom-36">
+
+                        Manish Software is the best affordable custom mobile app design & development company providing
+                        iPhone App Development, Android App Development, Multi-platform Mobile Apps, iPad Application
+                        Development, Custom Software Development, Flutter App Development, and Firebase App Development
+                        services USA, Canada & India.
+                    </p>
+
+                    <div>
+
+
+                        <a mat-raised-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                            Get a quote <mat-icon svgIcon="arrow_right"></mat-icon>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+                <div fxFlex>
+                    <img alt="mobile app development services company" class="image"
+                        src="https://res.cloudinary.com/manish-software/image/upload/v1630483590/website/best-mobile-app-development-company.webp">
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="apps_we_develop">
+
+
+        <mat-card-content>
+            <h2 class="mat-display-1 text-heading">
+                We Build Custom Mobile Apps For Android & iOS
+            </h2>
+            <p class="mat-subheading-2 text light text-center">
+                Our app developers are excited to design & develop custom mobile applications for your
+                startup or business. We specialize in creating beautiful and highly functional mobile
+                apps that business owners and users love! We do all the hard work for you. From conceptualizing
+                a prototype, testing a product, finding a market fit, scaling up, and anything in-between!
+            </p>
+
+
+            <div fxLayout="row wrap" class="margin-top-36 ibg">
+                <div class="item" *ngFor="let item of services" fxFlex="calc(100% / 2)" fxFlex.md="calc(100% / 2)"
+                    fxFlex.sm="calc(100% / 2)" fxFlex.xs="calc(100% / 1)">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <img [alt]="item.text" mat-card-sm-image [src]="item.href">
+                        </div>
+                        <div fxFlex>
+                            <h3>{{item.text}}</h3>
+                            <p class="light">{{item.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0" id="about">
+
+        <mat-card-content class="text-center">
+            <h2 class="mat-display-1 text-heading"> We Are Best Mobile App Design & Development Company That Gets You
+                Profitable Results
+            </h2>
+            <p class="mat-subheading-2 text light">
+                Manish Software design and deploy some of the most powerful and truly one-of-its-kind apps for the Web,
+                Android, and iOS. We follow Agile Iteration Workflow and leverage the best technology tools available
+                (including Flutter, Firebase, GitHub, and many more) to build premium apps that help businesses earn
+                more leads, sales, and profits.
+            </p>
+            <p class="mat-subheading-2 text light margin-top-16">
+                We take care of the entire mobile application development process for you, so that you can focus
+                on what you do best in your business. Our skilled development team consists of app designers and
+                developers who
+                fully understand what it takes to build customized apps — from A to Z!
+            </p>
+            <p class="mat-subheading-2 text light margin-top-16">
+                If you're looking for a reliable and proven mobile software development company that's not only
+                passionate about building apps but also excels at it – then Manish Software is the perfect mobile app
+                developer for you.
+            </p>
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="pricing">
+
+        <mat-card-content>
+
+            <h2 class="mat-display-1 text-heading">We Offer Affordable Mobile
+                App
+                Development Pricing Options
+            </h2>
+            <p class="mat-subheading-2 light text-center margin-bottom-36">
+                Affordable mobile app design & development services to create a mobile app <br> — with ZERO upfront
+                payments!
+            </p>
+
+
+            <div class="margin-bottom-36" fxLayout fxLayout.xs="column" fxLayout.sm="column"
+                fxLayoutAlign="center stretch" fxLayoutGap="24px">
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+
+                    <h3>50% OFF</h3>
+
+                    <p class="light">
+                        Special Offer - Flat 50% Off On All Mobile App Design & Development Services.
+                    </p>
+                    <p class="light">
+                        OFF50 (Use this coupon code at checkout)
+                    </p>
+
+
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <img class="margin-bottom-8" alt="mobile apps development offer for startups'" mat-card-sm-image
+                        src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/startup.png">
+
+                    <h3>Early stage company?</h3>
+                    <p class="light">
+                        Eligible startups can get $2,000 in free credits for mobile application development services
+                        with a
+                        20% discount on any additional service fees. This offer is applicable on the invoice value of
+                        above
+                        $6,000.
+
+
+                    </p>
+
+                    <p>
+                        <a mat-stroked-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                            Apply now
+                        </a>
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="text-center margin-bottom-24">
+                <mat-button-toggle-group #package="matButtonToggleGroup" name="package" aria-label="Package"
+                    value="Android App Development">
+                    <mat-button-toggle value="Android App Development">Android </mat-button-toggle>
+                    <mat-button-toggle value="iOS App Development">iOS</mat-button-toggle>
+                    <mat-button-toggle value="Android & iOS App Development">Both</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+
+            <div class="margin-bottom-24" *ngFor="let item of packages | packagefilter:package.value" fxLayout
+                fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center stretch" fxLayoutGap="24px">
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div class="text-center">
+                        <h3>{{package.value}}</h3>
+
+                        <p class="light">
+
+                            One-time project from {{item.development}}
+                        </p>
+
+
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.developmentLink"
+                                target="_blank">
+                                Get started ($1)
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+                    <p class="light">Best for early-stage companies.</p>
+
+
+                    <ul class="light">
+                        <li>
+                            Includes 5 features
+                        </li>
+
+                        <li>
+                            3 revisions
+                        </li>
+                        <li>
+                            Source code
+                        </li>
+
+                        <li>
+                            45 days support
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div class="text-center">
+                        <h3>Additional Features Development </h3>
+                        <p class="light">from {{item.feature}} per feature</p>
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.featureLink"
+                                target="_blank">
+                                Buy
+                            </a>
+
+                        </p>
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+
+                    <p class="light"> Add more features to your app at any time. </p>
+                    <ul class="light">
+
+
+                        <li>
+                            3 revisions
+                        </li>
+                        <li>
+                            Source code
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div class="text-center">
+
+                        <h3>App Maintenance Cost </h3>
+                        <p class="light">from {{item.maintenance}} per month</p>
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.maintenanceLink"
+                                target="_blank">
+                                7 days free
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+
+                    <p class="light"> Ongoing support. </p>
+                    <ul class="light">
+                        <li>
+                            Regular package upgrades
+                        </li>
+                        <li>
+                            Daily backups
+                        </li>
+                        <li>
+                            Bug fixes
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center stretch" fxLayoutGap="24px">
+
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div class="text-center">
+                        <h3>Startup Program</h3>
+
+                        <p class="light">
+
+                            One-time project from $6,000
+                        </p>
+
+
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener"
+                                href="https://buy.stripe.com/4gw02U5oN5WmcykaER" target="_blank">
+                                Buy now
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+                    <p class="light">
+                        Give wings to your startup idea and launch your startup with our Android and iOS app development
+                        service.</p>
+
+
+                    <ul class="light">
+                        <li>
+                            Android and iOS App
+                        </li>
+                        <li>
+                            Includes 5 features
+                        </li>
+
+                        <li>
+                            3 revisions
+                        </li>
+                        <li>
+                            Source code
+                        </li>
+
+                        <li>
+                            45 days support
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div class="text-center">
+                        <h3>
+                            Dedicated App Development Team
+                        </h3>
+
+                        <p class="light">
+
+                            One-time project from $8,000
+                        </p>
+
+
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener"
+                                href="https://buy.stripe.com/dR6cPG2cB3Oe8i4aES" target="_blank">
+                                Buy now
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+                    <p class="light">
+                        Not sure about your app development requirements? Hire a dedicated managed team of app
+                        developers for 2 months.
+                    </p>
+
+
+                    <ul class="light">
+                        <li>
+                            Android and iOS App
+                        </li>
+
+                        <li>
+                            Includes unlimited features
+                        </li>
+
+                        <li>
+                            Unlimited revisions
+                        </li>
+                        <li>
+                            Source code
+                        </li>
+
+                        <li>
+                            2 months development
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div class="text-center">
+                        <h3>On-Demand App Developers</h3>
+
+                        <p class="light">
+
+                            from $1,500 per month
+                        </p>
+
+                        <p>
+                            <a mat-stroked-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                                Contact sales
+                            </a>
+                        </p>
+                    </div>
+                    <div class="pricing-item"></div>
+
+
+                    <p class="light">
+                        Hire on-demand, trained mobile app developers anytime, anywhere. Manish Software helps
+                        technology-based startups build, launch & manage mobile apps.
+                    </p>
+
+                    <ul class="light">
+                        <li>
+                            Build, test, and deploy mobile, web, and desktop apps
+                        </li>
+
+                        <li>
+                            Guaranteed 30hrs / week working hours
+                        </li>
+
+                        <li>
+                            Project manager & access to premium project management tools
+                        </li>
+
+                        <li>No minimum commitment</li>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0">
+        <mat-card-content class="text-left">
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="24px" fxLayoutAlign=" center start">
+                <div fxFlex>
+                    <div class="img-container">
+
+                        <img alt="pay on delivery app development services" class="image" loading="lazy"
+                            src="https://res.cloudinary.com/manish-software/image/upload/v1630483599/website/mobile-app-development-services.webp">
+                    </div>
+                </div>
+                <div fxFlex>
+                    <h2 class="mat-display-1 text-left">You'll Never Pay a Single Penny
+                        Until You're 100% Satisfied For App Development Services!
+                    </h2>
+
+                    <p class="statement1 mat-subheading-2 light">
+                        Thanks to our unique pay-on-delivery mobile app development services, you pay nothing for app
+                        development costs until
+                        you're 100% satisfied with our work. Once we break down your app requirements and needs into
+                        specific functionalities, we'll design, develop, and deliver on a milestone basis. We will
+                        charge you once when we deliver on each milestone. </p>
+
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="how-we-work">
+
+        <mat-card-content>
+
+            <h2 class="mat-display-1 text-heading">
+                Let's Hire A Top Mobile App Developer In Just 3 Easy Steps!
+            </h2>
+            <p class="mat-subheading-2 text light text-center margin-bottom-36">
+                Hiring custom iPhone & Android mobile app developers never felt this easy. To get started, click on the
+                "Send a message" button. Or, if you have any questions or concerns, please feel free to reach out to our
+                friendly sales team, and we will be happy to get back to you as soon as we can.
+            </p>
+
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center stretch" fxLayoutGap="24px">
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="one"> </mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <h3>Share Your Project Design & Development Details</h3>
+                            <p class="light">Share your mobile app development project details with our app developers.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="two"></mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <h3>Receive Mobile App Development Project Management Plan</h3>
+                            <p class="light"> We provide an overview of our app development plans, milestones, and
+                                timelines.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="three"></mat-icon>
+
+                        </div>
+                        <div fxFlex>
+                            <h3>We Develop & Deliver The Feature and Charge You</h3>
+                            <p class="light">We develop each feature according to the plan, and we charge you upon
+                                delivering each step.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0">
+
+        <mat-card-content class="text-center">
+            <h2 class="mat-display-1 text-heading text-center margin-bottom-36">
+                Get A 30 Minutes FREE
+                Mobile App Development Consultation </h2>
+            <p class="mat-subheading-2 text light text-center margin-bottom-36">
+
+                Are you looking for a custom mobile app developer for your business or startup? Hire the world's leading
+                mobile app development company. Ask us anything or leave your feedback. Get 24/7 support from a live
+                person through email, chat, or phone.
+
+
+            </p>
+
+            <div class="margin-bottom-36">
+                <a mat-raised-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                    Send a message
+                    <mat-icon svgIcon="arrow_right"></mat-icon>
+                </a>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="faqs">
+
+
+        <mat-card-content>
+            <h2 class="mat-display-1 text-heading">Mobile App Development Frequently Asked Questions
+            </h2>
+            <p class="mat-subheading-2 text light text-center  margin-bottom-36">
+                Mobile app development involves multiple stages and takes substantial resources to complete. Following
+                are the most frequent questions that entrepreneurs ask about developing their mobile apps.
+
+            </p>
+
+            <div class="text">
+                <mat-accordion>
+                    <mat-expansion-panel *ngFor="let item of faqs" (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{item.ques}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="light">{{item.ans}}</p>
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </div>
+
+        </mat-card-content>
+
+    </mat-card> -->
+
+    <mat-card class="mat-elevation-z0">
+        <mat-card-content class="light text-center">
+
+            <a class="footer-item margin-left-0" href="https://manishsoftware.com/flutter-app-development/">
+                Flutter App Development</a>
+        </mat-card-content>
+    </mat-card>
+
+    <app-footer></app-footer>
+
+</mat-drawer-container>

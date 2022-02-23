@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "manishsoftwareapp"
+  },
+  "targets": {
+    "manishsoftwareapp": {
+      "hosting": {
+        "ms": [
+          "manishsoftwareapp"
+        ]
+      }
+    }
+  }
+}

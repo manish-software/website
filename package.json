@@ -1,0 +1,53 @@
+{
+  "name": "manish-software",
+  "version": "2.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "dev:ssr": "ng run ms:serve-ssr",
+    "serve:ssr": "node dist/ms/server/main.js",
+    "build:ssr": "ng build && ng run ms:server",
+    "prerender": "ng run ms:prerender"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "13.2.3",
+    "@angular/cdk": "13.2.3",
+    "@angular/common": "13.2.3",
+    "@angular/compiler": "13.2.3",
+    "@angular/core": "13.2.3",
+    "@angular/flex-layout": "13.0.0-beta.38",
+    "@angular/forms": "13.2.3",
+    "@angular/material": "13.2.3",
+    "@angular/platform-browser": "13.2.3",
+    "@angular/platform-browser-dynamic": "13.2.3",
+    "@angular/platform-server": "13.2.3",
+    "@angular/router": "13.2.3",
+    "@nguniversal/express-engine": "13.0.2",
+    "angular-google-tag-manager": "1.5.0",
+    "express": "4.17.3",
+    "globalthis": "1.0.2",
+    "rxjs": "7.5.4",
+    "tslib": "2.3.1",
+    "zone.js": "0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "13.2.4",
+    "@angular/cli": "13.2.4",
+    "@angular/compiler-cli": "13.2.3",
+    "@nguniversal/builders": "13.0.2",
+    "@types/express": "4.17.13",
+    "@types/jasmine": "3.10.3",
+    "@types/node": "17.0.19",
+    "jasmine-core": "4.0.1",
+    "karma": "6.3.16",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-coverage": "2.2.0",
+    "karma-jasmine": "4.0.1",
+    "karma-jasmine-html-reporter": "1.7.0",
+    "typescript": "4.5.5"
+  }
+}

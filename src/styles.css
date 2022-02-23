@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.right-spacer {
+  flex: 1 1 auto;
+}
+
+.mute {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.mat-toolbar {
+  background-color: #ffffff;
+}
+
+.top {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.display-none {
+  display: none;
+}
+
+.bg-dark {
+  background-color: #f2f6fb;
+}

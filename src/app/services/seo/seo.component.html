@@ -1,0 +1,376 @@
+<mat-drawer-container autosize>
+    <mat-drawer #drawer class="sidenav" mode="over">
+        <mat-nav-list style="padding-top: 0px;">
+            <a mat-list-item href="https://manishsoftware.com/">
+                <img alt="icon" class="icon" width="24" height="24"
+                    src="https://res.cloudinary.com/manish-software/image/upload/c_scale,w_128/v1630483566/website/manish-software-icon.webp">
+                <img alt="logo" class="logo" width="71" height="24"
+                    src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/images/ms5.png">
+            </a>
+
+
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('about')">
+                <div mat-line> About</div>
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('pricing')">
+                <div mat-line> Pricing</div>
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('how-we-work')">
+                <div mat-line>How we work </div>
+            </mat-list-item>
+
+
+
+            <a mat-list-item rel="noopener" href="https://wa.me/message/L5WXALFTOQUHN1" target="_blank">WhatsApp</a>
+
+        </mat-nav-list>
+    </mat-drawer>
+
+    <mat-toolbar class="app-navbar">
+        <mat-toolbar-row>
+            <button fxShow fxHide.gt-sm="true" mat-icon-button (click)="drawer.toggle()">
+                <mat-icon svgIcon="menu"></mat-icon>
+            </button>
+
+            <span class="margin-left-10" fxHide fxShow.gt-sm="true"></span>
+
+
+
+            <a href="https://manishsoftware.com/" mat-button>
+                <img alt="icon" class="icon" width="24" height="24"
+                    src="https://res.cloudinary.com/manish-software/image/upload/c_scale,w_128/v1630483566/website/manish-software-icon.webp">
+                <img alt="logo" class="logo" width="71" height="24"
+                    src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/images/ms5.png">
+            </a>
+
+            <span class="right-spacer"></span>
+
+            <span fxHide fxShow.gt-sm="true">
+
+                <button mat-button (click)="scrollToElement('about')" class="menu">About</button>
+
+                <button mat-button (click)="scrollToElement('pricing')" class="menu">Pricing</button>
+
+                <button mat-button (click)="scrollToElement('how-we-work')" class="menu">How we work</button>
+
+                <a mat-button class="menu" rel="noopener" href="https://wa.me/message/L5WXALFTOQUHN1"
+                    target="_blank">WhatsApp</a>
+
+            </span>
+
+            <span class="right-spacer"></span>
+          
+            <app-menu></app-menu>
+
+            <span class="margin-right-10" fxHide fxShow.gt-sm="true"></span>
+
+
+
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card id="top" class="mat-card-section mat-elevation-z0">
+        <mat-card-content>
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign=" center start" fxLayoutGap="32px">
+
+                <div fxFlex>
+                    <h1 class="mat-display-2 text-left">
+                        Best Search Engine Optimization (SEO) Services Company
+                    </h1>
+
+                    <p class="mat-subheading-2 light margin-bottom-36">
+                        Manish Software is the leading search engine optimization (SEO) company providing SEO Audit,
+                        On-Page SEO, Off-Page SEO, Keyword Research, Technical SEO, and Competitor Analysis services.
+                    </p>
+
+                    <div>
+
+
+                        <a mat-raised-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                            Get a quote <mat-icon svgIcon="arrow_right"></mat-icon>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+                <div fxFlex>
+                    <img alt="best seo company" class="image"
+                        src="https://res.cloudinary.com/manish-software/image/upload/v1639852238/website/seo_services_company_mrjhrc.webp">
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="apps_we_develop">
+
+
+        <mat-card-content>
+            <h2 class="mat-display-1 text-heading">
+                We Give Your Website A SEO Tune-Up
+            </h2>
+            <p class="mat-subheading-2 text light text-center">
+                Our professional SEO experts help you boost your organic ranking in search engines and get more
+                visitors with best practices and white hat strategies.
+            </p>
+
+
+            <div fxLayout="row wrap" class="margin-top-36 ibg">
+                <div class="item" *ngFor="let item of services" fxFlex="calc(100% / 2)" fxFlex.md="calc(100% / 2)"
+                    fxFlex.sm="calc(100% / 2)" fxFlex.xs="calc(100% / 1)">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <img [alt]="item.text" mat-card-sm-image [src]="item.href">
+                        </div>
+                        <div fxFlex>
+                            <h3>{{item.text}}</h3>
+                            <p class="light">{{item.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0" id="about">
+
+        <mat-card-content class="text-center">
+            <h2 class="mat-display-1 text-heading">
+                We Are Best SEO Services Company That Gets You High Ranking & More Traffic
+            </h2>
+            <p class="mat-subheading-2 text light">
+                Manish Software applies best practices and white hat strategies to improve rankings in search engines
+                and get more website traffic. We follow Google web vitals to enhance web performance and user
+                experience. Also, advance your overall brand identity to bring you more sales.
+            </p>
+
+
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="pricing">
+
+        <mat-card-content>
+
+            <h2 class="mat-display-1 text-heading">We Offer Affordable Search Engine Optimization Pricing Options</h2>
+            <p class="mat-subheading-2 light text-center margin-bottom-36">
+                Affordable SEO packages to rank high in search engines and get more relevant traffic<br> — with ZERO
+                upfront payments!
+            </p>
+
+
+
+
+
+            <div class="margin-bottom-24" fxLayout fxLayout.xs="column" fxLayout.sm="column"
+                fxLayoutAlign="center stretch" fxLayoutGap="24px">
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div class="text-center">
+                        <h3>SEO Package</h3>
+
+                        <p class="light">
+                            from {{item.development}} per month
+                        </p>
+
+
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.developmentLink"
+                                target="_blank">
+                                Get started (7 days free)
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+                    <p class="light">
+                        SEO consulting, advice & guidance.
+                    </p>
+
+
+                    <ul class="light">
+
+                        <li>
+                            SEO Audit
+                        </li>
+                        <li>
+                            Competitor Analysis
+                        </li>
+                        <li>
+                            On-Page Optimization
+                        </li>
+                        <li>
+                            Bad Links Removal
+                        </li>
+                        <li>
+                            Technical SEO
+                        </li>
+                        <li>
+                            Off-Page Strategy
+                        </li>
+                        <li>
+                            Keywords Research
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <img class="margin-bottom-8" alt="seo services offer for small businesses & startups'"
+                        mat-card-md-image
+                        src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/startup.png">
+
+                    <h3>Small business or startup? </h3>
+
+
+                    <p class="light">
+                        Eligible small businesses or startups can get a 50% discount on SEO services.
+                    </p>
+
+                    <p>
+                        <a mat-stroked-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                            Apply now
+                        </a>
+
+                    </p>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0">
+        <mat-card-content class="text-left">
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="24px" fxLayoutAlign=" center start">
+                <div fxFlex>
+                    <div class="img-container">
+
+                        <img alt="free trial for seo services" class="image" loading="lazy"
+                            src="https://res.cloudinary.com/manish-software/image/upload/v1639853698/website/seo-trial_nlxskc.webp">
+                    </div>
+                </div>
+                <div fxFlex>
+                    <h2 class="mat-display-1 text-left">
+                        7 Days Free Trial For SEO Services!
+                    </h2>
+
+                    <p class="statement1 mat-subheading-2 light">
+                        Thanks to our unique 7-day free trial, start from ordering SEO Service. If for any reason you
+                        wish to cancel the service during this period, we kindly ask you to contact our
+                        customer service team.
+                    </p>
+
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="how-we-work">
+
+        <mat-card-content>
+
+            <h2 class="mat-display-1 text-heading">
+                Let's Hire The Best SEO Company In Just 3 Easy Steps!
+            </h2>
+            <p class="mat-subheading-2 text light text-center margin-bottom-36">
+                Hiring the best SEO experts never felt this easy. To get started, click on the "Send a message" button. Or,
+                if you have any questions or concerns, please feel free to reach out to our friendly sales team, and we
+                will be happy to get back to you as soon as we can.
+            </p>
+
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center stretch" fxLayoutGap="24px">
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="one"> </mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <h3>Signup & Share Your Website Details</h3>
+                            <p class="light">Please share your website URL with our professional SEO
+                                experts.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="two"></mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <h3>Receive SEO Strategy Plan & Timelines</h3>
+                            <p class="light"> We provide an overview of our SEO plans, strategy, and timelines.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="three"></mat-icon>
+
+                        </div>
+                        <div fxFlex>
+                            <h3>We Deliver The Ranking & SEO Results</h3>
+                            <p class="light">We deliver the results that your website needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0">
+
+        <mat-card-content class="text-center">
+            <h2 class="mat-display-1 text-heading text-center margin-bottom-36">
+                Get A 30 Minutes FREE SEO Consultation
+            </h2>
+            <p class="mat-subheading-2 text light text-center margin-bottom-36">
+
+                Are you looking for a professional SEO expert? Ask us anything or leave your feedback. Get 24/7
+                support from a live person through email, chat, or phone.
+
+            </p>
+
+            <div class="margin-bottom-36">
+                <a mat-raised-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                    Send a message
+                    <mat-icon svgIcon="arrow_right"></mat-icon>
+                </a>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <app-footer></app-footer>
+
+</mat-drawer-container>

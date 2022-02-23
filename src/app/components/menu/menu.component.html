@@ -1,0 +1,12 @@
+<button mat-stroked-button color="primary" [matMenuTriggerFor]="appMenu">Services</button>
+<mat-menu #appMenu="matMenu" xPosition="before">
+    <a mat-menu-item [ngClass]="!path ? 'active' : ''" href="https://manishsoftware.com/">
+        Mobile Application Development
+    </a>
+    <a mat-menu-item [ngClass]="path === '/web-design' ? 'active' : ''" href="https://manishsoftware.com/web-design/">
+        Web Design
+    </a>
+    <a mat-menu-item [ngClass]="path === '/seo' ? 'active' : ''" href="https://manishsoftware.com/seo/">
+        Search Engine Optimization (SEO)
+    </a>
+</mat-menu>

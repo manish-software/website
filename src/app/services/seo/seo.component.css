@@ -1,0 +1,186 @@
+.mat-card-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 960px) {
+  .mat-card-content {
+    margin: 0 10%;
+  }
+}
+
+.light {
+  color: #6b7177;
+}
+
+#top {
+  margin-top: 56px;
+}
+
+@media (min-width: 600px) {
+  #top {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 960px) {
+  .text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 960px) {
+  .text-heading {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.mat-card-sm-image {
+  width: 48px;
+  height: 48px;
+}
+
+.item {
+  padding: 24px;
+}
+
+.ibg {
+  border-radius: 8px;
+  border: 1px solid rgb(0 0 0 / 12%);
+}
+
+.image {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  /* margin-bottom: -85px; */
+}
+
+.mat-display-1,
+.mat-display-2,
+.mat-display-3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 16px;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+ul li:before {
+  position: absolute;
+  left: -8px;
+  font-family: "Material Icons";
+  content: "\2714";
+  color: #33a852;
+}
+
+.app-navbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.mat-drawer {
+  position: fixed !important;
+}
+
+.margin-bottom-clear {
+  margin-bottom: 0px;
+}
+
+.pricing-item {
+  border-top: 1px solid rgb(0 0 0 / 8%);
+  margin: 24px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.margin-bottom-36 {
+  margin-bottom: 36px;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.margin-top-36 {
+  margin-top: 36px;
+}
+
+.margin-top-16 {
+  margin-top: 16px;
+}
+
+.margin-right-8 {
+  margin-right: 8px;
+}
+
+.margin-right-16 {
+  margin-right: 16px;
+}
+
+.margin-left-10 {
+  margin-left: 10%;
+}
+
+.margin-left-0 {
+  margin-left: 0px;
+}
+
+.margin-right-10 {
+  margin-right: 10%;
+}
+
+.bg-dark {
+  background-color: #ffffff;
+}
+
+.icon {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.how-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  color: #33a852;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+@media (max-width: 360px) {
+  .font-48 {
+    font-size: 48px;
+  }
+}

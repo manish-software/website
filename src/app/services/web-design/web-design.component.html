@@ -1,0 +1,447 @@
+<mat-drawer-container autosize>
+    <mat-drawer #drawer class="sidenav" mode="over">
+        <mat-nav-list style="padding-top: 0px;">
+            <a mat-list-item href="https://manishsoftware.com/">
+                <img alt="icon" class="icon" width="24" height="24"
+                    src="https://res.cloudinary.com/manish-software/image/upload/c_scale,w_128/v1630483566/website/manish-software-icon.webp">
+                <img alt="logo" class="logo" width="71" height="24"
+                    src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/images/ms5.png">
+            </a>
+
+
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('about')">
+                <div mat-line> About</div>
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('pricing')">
+                <div mat-line> Pricing</div>
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle(); scrollToElement('how-we-work')">
+                <div mat-line>How we work </div>
+            </mat-list-item>
+
+
+
+            <a mat-list-item rel="noopener" href="https://wa.me/message/L5WXALFTOQUHN1" target="_blank">WhatsApp</a>
+
+        </mat-nav-list>
+    </mat-drawer>
+
+    <mat-toolbar class="app-navbar">
+        <mat-toolbar-row>
+            <button fxShow fxHide.gt-sm="true" mat-icon-button (click)="drawer.toggle()">
+                <mat-icon svgIcon="menu"></mat-icon>
+            </button>
+
+            <span class="margin-left-10" fxHide fxShow.gt-sm="true"></span>
+
+
+
+            <a href="https://manishsoftware.com/" mat-button>
+                <img alt="icon" class="icon" width="24" height="24"
+                    src="https://res.cloudinary.com/manish-software/image/upload/c_scale,w_128/v1630483566/website/manish-software-icon.webp">
+                <img alt="logo" class="logo" width="71" height="24"
+                    src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/images/ms5.png">
+            </a>
+
+            <span class="right-spacer"></span>
+
+            <span fxHide fxShow.gt-sm="true">
+                <button mat-button (click)="scrollToElement('about')" class="menu">About</button>
+
+                <button mat-button (click)="scrollToElement('pricing')" class="menu">Pricing</button>
+
+                <button mat-button (click)="scrollToElement('how-we-work')" class="menu">How we work</button>
+
+                <!-- <button mat-button (click)="scrollToElement('faqs')" class="menu">FAQs</button> -->
+
+
+                <a mat-button class="menu" rel="noopener" href="https://wa.me/message/L5WXALFTOQUHN1"
+                    target="_blank">WhatsApp</a>
+
+
+            </span>
+
+            <span class="right-spacer"></span>
+            <!-- <button mat-stroked-button color="primary" (click)="scrollToElement('pricing')">$200 in
+                credits</button> -->
+            <app-menu></app-menu>
+
+            <span class="margin-right-10" fxHide fxShow.gt-sm="true"></span>
+
+
+
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card id="top" class="mat-card-section mat-elevation-z0">
+        <mat-card-content>
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign=" center start" fxLayoutGap="32px">
+
+                <div fxFlex>
+                    <h1 class="mat-display-2 text-left">
+                        Top Website Design Company
+                    </h1>
+
+                    <p class="mat-subheading-2 light margin-bottom-36">
+
+
+                        Manish Software is the top mobile responsive website design & development company providing
+                        commercial web design services for corporates and small businesses.
+                    </p>
+
+                    <div>
+
+
+                        <a mat-raised-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                            Get a quote <mat-icon svgIcon="arrow_right"></mat-icon>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+                <div fxFlex>
+                    <img alt="top website design company" class="image"
+                        src="https://res.cloudinary.com/manish-software/image/upload/v1638532423/website/top_website_design_services_company_fiqkre.webp">
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="apps_we_develop">
+
+
+        <mat-card-content>
+            <h2 class="mat-display-1 text-heading">
+                We Design Beautiful Mobile Responsive Websites
+            </h2>
+            <p class="mat-subheading-2 text light text-center">
+                Our creative web designers help you to design & develop websites for your startup or business. We
+                specialize in creating beautiful, mobile responsive & SEO-friendly corporate websites that you love! We
+                do all the hard work for you, from outlining, designing, and organizing content online.
+            </p>
+
+
+            <div fxLayout="row wrap" class="margin-top-36 ibg">
+                <div class="item" *ngFor="let item of services" fxFlex="calc(100% / 2)" fxFlex.md="calc(100% / 2)"
+                    fxFlex.sm="calc(100% / 2)" fxFlex.xs="calc(100% / 1)">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <img [alt]="item.text" mat-card-sm-image [src]="item.href">
+                        </div>
+                        <div fxFlex>
+                            <h3>{{item.text}}</h3>
+                            <p class="light">{{item.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0" id="about">
+
+        <mat-card-content class="text-center">
+            <h2 class="mat-display-1 text-heading">
+                We Are Top Website Design & Development Company That Gets You Best Results
+            </h2>
+            <p class="mat-subheading-2 text light">
+                Manish Software design beautiful websites optimized for loading speed and lead generation. Our custom
+                UI/UX methodologies give a seamless web experience for your audience.
+            </p>
+            <p class="mat-subheading-2 text light margin-top-16">
+                We take your website very seriously and always focus on essential fundamentals of web design such as
+                SEO, mobile responsiveness, and performance.
+            </p>
+            <p class="mat-subheading-2 text light margin-top-16">
+                We are a reliable website design company that's passionate about building creative & beautiful websites
+                and shines at them. Manish Software is the perfect web designer for you.
+            </p>
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="pricing">
+
+        <mat-card-content>
+
+            <h2 class="mat-display-1 text-heading">We Offer Affordable Website Design Pricing Options </h2>
+            <p class="mat-subheading-2 light text-center margin-bottom-36">
+                Affordable web design packages to create a beautiful website for your business<br> — with ZERO upfront
+                payments!
+            </p>
+
+
+
+
+
+            <div class="margin-bottom-24" fxLayout fxLayout.xs="column" fxLayout.sm="column"
+                fxLayoutAlign="center stretch" fxLayoutGap="24px">
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div class="text-center">
+                        <h3>Website Design Cost</h3>
+
+                        <p class="light">
+
+                            One-time design from {{item.development}}
+                        </p>
+
+
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.developmentLink"
+                                target="_blank">
+                                Get started
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+                    <p class="light">SEO Optimized, Mobile Responsive, and WordPress CMS website designing services.</p>
+
+
+                    <ul class="light">
+
+
+                        <li>
+                            3 revisions
+                        </li>
+                        <li>
+                            1 domain name
+                        </li>
+                        <li>
+                            5 emails
+                        </li>
+                        <li>
+                            1-year hosting
+                        </li>
+                        <li>
+                            45 days support
+                        </li>
+                        <li>
+                            10 days delivery time
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div class="text-center">
+                        <h3>Additional Pages Design Cost </h3>
+                        <p class="light">from {{item.feature}} per page</p>
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.featureLink"
+                                target="_blank">
+                                Buy
+                            </a>
+
+                        </p>
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+
+                    <p class="light"> Add more pages to your website at any time. </p>
+                    <ul class="light">
+                        <li>
+                            3 revisions
+                        </li>
+                    </ul>
+
+
+                </div> -->
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div class="text-center">
+
+                        <h3>Website Maintenance Cost</h3>
+                        <p class="light">from {{item.maintenance}} per month</p>
+                        <p>
+                            <a mat-stroked-button color="primary" rel="nofollow noopener" [href]="item.maintenanceLink"
+                                target="_blank">
+                                7 days free
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="pricing-item"></div>
+
+
+                    <p class="light"> Ongoing website maintenance & support. </p>
+                    <ul class="light">
+                        <li>
+                            Regular website upgrades
+                        </li>
+                        <li>
+                            Daily backups
+                        </li>
+                        <li>
+                            Content updations
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <img class="margin-bottom-8" alt="website design offer for small businesses & startups'"
+                        mat-card-md-image
+                        src="https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/startup.png">
+
+                    <h3>Small business or startup? </h3>
+
+
+                    <p class="light">
+                        Eligible small businesses or startups can get $200 in free credits for website design &
+                        development
+                        with a 20% discount on any additional service fees.
+
+
+                    </p>
+
+                    <p>
+                        <a mat-stroked-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                            Apply now
+                        </a>
+
+                    </p>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0">
+        <mat-card-content class="text-left">
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="24px" fxLayoutAlign=" center start">
+                <div fxFlex>
+                    <div class="img-container">
+
+                        <img alt="pay on delivery web design services" class="image" loading="lazy"
+                            src="https://res.cloudinary.com/manish-software/image/upload/v1639853929/website/web-design-offer_qx4xgm.webp">
+                    </div>
+                </div>
+                <div fxFlex>
+                    <h2 class="mat-display-1 text-left">
+                        14 Days Money Back Guarantee For Web Design Services!
+                    </h2>
+
+                    <p class="statement1 mat-subheading-2 light">
+                        Thanks to our unique 14-day money-back guarantee, start from delivering your website design. If
+                        for any reason you wish to cancel the service during this period, we kindly ask you to contact
+                        our customer service team.
+                    </p>
+
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section bg-dark mat-elevation-z0" id="how-we-work">
+
+        <mat-card-content>
+
+            <h2 class="mat-display-1 text-heading">
+                Let's Hire A Top Website Design Company In Just 3 Easy Steps!
+            </h2>
+            <p class="mat-subheading-2 text light text-center margin-bottom-36">
+                Hiring the best web designer never felt this easy. To get started, click on the "Send a message" button.
+                Or, if you have any questions or concerns, please feel free to reach out to our friendly sales team, and
+                we will be happy to get back to you as soon as we can. </p>
+
+            <div fxLayout fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center stretch" fxLayoutGap="24px">
+                <div fxFlex class="item ibg mat-elevation-z0">
+
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="one"> </mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <h3>Share Your Website Design & Development Details </h3>
+                            <p class="light">Please share your website design & development details with our
+                                professional web designers. </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="two"></mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <h3>Receive Website Design Timelines </h3>
+                            <p class="light"> We provide an overview of our website design plans, pages, and
+                                timelines.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div fxFlex class="item ibg mat-elevation-z0">
+                    <div fxLayout="row" fxLayoutGap="24px">
+                        <div fxFlex="48px">
+                            <mat-icon class="how-icon" svgIcon="three"></mat-icon>
+
+                        </div>
+                        <div fxFlex>
+                            <h3>We Deliver The Work </h3>
+                            <p class="light">We design the website according to the plan and deliver your project.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card-section mat-elevation-z0">
+
+        <mat-card-content class="text-center">
+            <h2 class="mat-display-1 text-heading text-center margin-bottom-36">
+                Get A 30 Minutes FREE Website Design Consultation
+            </h2>
+            <p class="mat-subheading-2 text light text-center margin-bottom-36">
+
+                Are you looking for a professional web designer? Ask us anything or leave your feedback. Get 24/7
+                support from a live person through email, chat, or phone.
+
+            </p>
+
+            <div class="margin-bottom-36">
+                <a mat-raised-button color="primary" onclick="FB.CustomerChat.showDialog();">
+                    Send a message
+                    <mat-icon svgIcon="arrow_right"></mat-icon>
+                </a>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <app-footer></app-footer>
+
+</mat-drawer-container>
