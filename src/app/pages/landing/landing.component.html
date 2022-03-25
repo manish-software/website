@@ -232,21 +232,21 @@
 
             </div>
 
-            <div class="text-center margin-bottom-24">
+            <!-- <div class="text-center margin-bottom-24">
                 <mat-button-toggle-group #package="matButtonToggleGroup" name="package" aria-label="Package"
                     value="Android App Development">
                     <mat-button-toggle value="Android App Development">Android </mat-button-toggle>
                     <mat-button-toggle value="iOS App Development">iOS</mat-button-toggle>
                     <mat-button-toggle value="Android & iOS App Development">Both</mat-button-toggle>
                 </mat-button-toggle-group>
-            </div>
+            </div> -->
 
-            <div class="margin-bottom-24" *ngFor="let item of packages | packagefilter:package.value" fxLayout
-                fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center stretch" fxLayoutGap="24px">
+            <div class="margin-bottom-24" fxLayout fxLayout.xs="column" fxLayout.sm="column"
+                fxLayoutAlign="center stretch" fxLayoutGap="24px">
                 <div fxFlex class="item ibg mat-elevation-z0">
 
                     <div class="text-center1">
-                        <h3>{{package.value}}</h3>
+                        <h3>{{ 'App Development'}}</h3>
 
                         <!-- <p class="light">
 
