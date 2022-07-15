@@ -199,3 +199,9 @@ ul li:before {
   text-decoration: underline;
 }
 
+
+.link{
+  cursor: pointer;
+  /* text-decoration: none; */
+  color: #3f51b5;
+}
