@@ -9,7 +9,7 @@ Manish Software is the best affordable custom mobile app design &amp; developmen
 
 ## Top Website Design &amp; Development Company
 
-Manish Software is the top mobile responsive website design &amp; development company providing commercial web design service for corporates and small businesses.
+Manish Software is the top mobile responsive website design &amp; development company providing commercial web design services for corporates and small businesses.
 
 [Web Design](https://manishsoftware.com/web-design/)
 

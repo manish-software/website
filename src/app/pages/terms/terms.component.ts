@@ -12,7 +12,7 @@ export class TermsComponent implements OnInit {
   ngOnInit(): void {
     this.metaService.setPageMata(
       'Terms of Service — Manish Software',
-      'To provide our mobile app development service. We need to obtain your agreement to our Terms of Service.',
+      'To provide our mobile app development services. We need to obtain your agreement to our Terms of Service.',
       'https://res.cloudinary.com/manish-software/image/upload/v1630483566/website/manish-software-icon.jpg'
     );
   }
