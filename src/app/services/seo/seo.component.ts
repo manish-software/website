@@ -34,7 +34,7 @@ export class SeoComponent implements OnInit, AfterViewInit {
       text: 'Off-Page Strategy',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/off-page.png',
       description:
-        'Our Off-page search engine optimization services are keyword research, competitor analysis, and advanced SEO techniques.',
+        'Our Off-page search engine optimization service are keyword research, competitor analysis, and advanced SEO techniques.',
     },
     {
       text: 'Technical SEO Service',
@@ -51,7 +51,7 @@ export class SeoComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.metaService.setPageMata(
-      'Best Search Engine Optimization (SEO) Services Company — Manish Software',
+      'Best Search Engine Optimization (SEO) Service Company — Manish Software',
       'Our professional SEO experts help you boost your organic ranking in search engines and get more visitors with best practices and white hat strategies.',
       'https://res.cloudinary.com/manish-software/image/upload/v1639852238/website/seo_services_company_mrjhrc.jpg'
     );

@@ -20,8 +20,8 @@ export class FlutterAppDevelopmentComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.metaService.setPageMata(
-      'Top Flutter Mobile App Development Services Company — Manish Software',
-      'Manish Software is the leading flutter app development company providing flutter mobile application development services for Android & iOS.',
+      'Top Flutter Mobile App Development Service Company — Manish Software',
+      'Manish Software is the leading flutter app development company providing flutter mobile application development service for Android & iOS.',
       'https://res.cloudinary.com/manish-software/image/upload/v1645376901/website/flutter_app_development_company_waalqv.jpg'
     );
     // this.mediaObservar = this.breakpointObserver.observe([

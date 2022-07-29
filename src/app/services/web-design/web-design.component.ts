@@ -32,7 +32,7 @@ export class WebDesignComponent implements OnInit, AfterViewInit {
       text: 'Small Business Website Design',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/small-business.png',
       description:
-        'Website design for Small businesses such as professional, scientific, and technical services; retailing; wholesaling; manufacturing; and hotels and restaurants.',
+        'Website design for Small businesses such as professional, scientific, and technical service; retailing; wholesaling; manufacturing; and hotels and restaurants.',
     },
     {
       text: 'Company Website Design',
@@ -51,12 +51,12 @@ export class WebDesignComponent implements OnInit, AfterViewInit {
   constructor(
     private route: ActivatedRoute,
     private metaService: MetaService // public breakpointObserver: BreakpointObserver, // public mediaMatcher: MediaMatcher
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.metaService.setPageMata(
       'Top Website Design & Development Company — Manish Software',
-      'Manish Software is the top mobile responsive website design & development company providing commercial web design services for corporates and small businesses.',
+      'Manish Software is the top mobile responsive website design & development company providing commercial web design service for corporates and small businesses.',
       'https://res.cloudinary.com/manish-software/image/upload/v1638532423/website/top_website_design_services_company_fiqkre.jpg'
     );
     // this.mediaObservar = this.breakpointObserver.observe([
