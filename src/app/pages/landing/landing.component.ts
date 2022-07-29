@@ -47,7 +47,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
       text: 'Business Applications Development',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/business-and-trade.png',
       description:
-        'Innovative business & enterprises apps that will help you keep track of your data in real-time.',
+        'Innovative business & enterprise apps will help you track your data in real time.',
     },
     {
       text: 'SaaS Application Development',
@@ -77,7 +77,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
       text: 'Social Media App Development',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/network.png',
       description:
-        'Social media platforms to connect you with friends, family, colleagues, customers, or clients.',
+        'Social media app connects you with friends, family, colleagues, customers, or clients.',
     },
   ];
 
