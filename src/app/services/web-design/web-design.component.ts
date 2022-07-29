@@ -32,7 +32,7 @@ export class WebDesignComponent implements OnInit, AfterViewInit {
       text: 'Small Business Website Design',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/small-business.png',
       description:
-        'Website design for Small businesses such as professional, scientific, and technical service; retailing; wholesaling; manufacturing; and hotels and restaurants.',
+        'Design for professionals, retailers, wholesalers, manufacturers, hotels, and restaurants.',
     },
     {
       text: 'Company Website Design',
@@ -44,7 +44,7 @@ export class WebDesignComponent implements OnInit, AfterViewInit {
       text: 'Corporate Website Design',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/corporate.png',
       description:
-        'Corporate website designing with custom UI/UX methodologies to give a seamless web experience for your audience.',
+        'Corporate website designing with custom UI/UX methodologies gives your audience a seamless web experience.',
     },
   ];
 
