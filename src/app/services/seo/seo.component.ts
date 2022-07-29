@@ -34,13 +34,13 @@ export class SeoComponent implements OnInit, AfterViewInit {
       text: 'Off-Page Strategy',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/off-page.png',
       description:
-        'Our Off-page search engine optimization service are keyword research, competitor analysis, and advanced SEO techniques.',
+        'Our Off-page search engine optimization services are keyword research, competitor analysis, and advanced SEO techniques.',
     },
     {
       text: 'Technical SEO Service',
       href: 'https://storage.googleapis.com/manishsoftwareapp.appspot.com/assets/icons/technical.png',
       description:
-        'We identify technical errors, fix them, and take corrective actions to ensure proper indexing and crawling of pages.',
+        'We identify technical errors, fix them, and take corrective actions to ensure proper indexing and page crawling.',
     },
   ];
 
