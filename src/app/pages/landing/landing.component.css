@@ -56,7 +56,6 @@
   border-radius: 8px;
   width: 100%;
   height: auto;
-  /* margin-bottom: -85px; */
 }
 
 .mat-display-1,
@@ -202,6 +201,5 @@ ul li:before {
 
 .link{
   cursor: pointer;
-  /* text-decoration: none; */
   color: #3f51b5;
 }
