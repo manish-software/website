@@ -162,5 +162,8 @@
       }
     }
   },
-  "defaultProject": "ms"
+  "defaultProject": "ms",
+  "cli": {
+    "analytics": false
+  }
 }
