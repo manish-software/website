@@ -107,12 +107,12 @@ export class LandingComponent implements OnInit, AfterViewInit {
   constructor(
     private route: ActivatedRoute,
     private metaService: MetaService // public breakpointObserver: BreakpointObserver, // public mediaMatcher: MediaMatcher
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.metaService.setPageMata(
       'Mobile App Development Company',
-      'We helps companies in mobile app development. Manish Software provides iPhone and Android App Development Services. Contact Us to Discuss Your Project.',
+      'We are a one-stop solution for all your mobile app development needs and requirements. Contact us today to get started!',
       'https://res.cloudinary.com/manish-software/image/upload/v1630483590/website/best-mobile-app-development-company.jpg'
     );
     // this.mediaObservar = this.breakpointObserver.observe([
