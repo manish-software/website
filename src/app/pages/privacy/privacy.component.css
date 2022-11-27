@@ -1,5 +1,5 @@
 @media (min-width: 960px) {
-  .mat-card-content {
+  .mat-mdc-card-content {
     margin: 0 10%;
   }
 }

@@ -9,15 +9,15 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { BackComponent } from './components/back/back.component';
 
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule as MatCardModule } from '@angular/material/card';
+import { MatButtonModule as MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
+import { MatListModule as MatListModule } from '@angular/material/list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { MatMenuModule } from '@angular/material/menu';
+import { MatMenuModule as MatMenuModule } from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // import { environment } from 'src/environments/environment';
 import { PackagefilterPipe } from './pipes/packagefilter.pipe';
@@ -52,7 +52,9 @@ import { FlutterAppDevelopmentComponent } from './services/flutter-app-developme
     ContactComponent,
     FlutterAppDevelopmentComponent,
   ],
+
   imports: [
+    
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -79,4 +81,4 @@ import { FlutterAppDevelopmentComponent } from './services/flutter-app-developme
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

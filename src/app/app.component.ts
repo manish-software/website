@@ -24,7 +24,7 @@ export class AppComponent {
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer
   ) {
-   
+
 
     router.events.forEach((item) => {
       if (item instanceof NavigationEnd) {

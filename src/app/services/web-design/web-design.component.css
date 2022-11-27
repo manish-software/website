@@ -4,7 +4,7 @@
 }
 
 @media (min-width: 960px) {
-  .mat-card-content {
+  .mat-mdc-card-content {
     margin: 0 10%;
   }
 }
@@ -59,11 +59,10 @@
   /* margin-bottom: -85px; */
 }
 
-.mat-display-1,
-.mat-display-2,
+.mat-headline-3,
+.mat-headline-2,
 .mat-display-3 {
   text-align: center;
-  font-weight: 700;
 }
 
 h3 {
