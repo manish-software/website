@@ -111,8 +111,8 @@ export class LandingComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.metaService.setPageMata(
-      'Best Custom Mobile App Design & Development Service Company',
-      'Manish Software is the best affordable custom mobile app design & development company providing iPhone App Development, Android App Development, Multi-platform Mobile Apps, iPad Application Development, Custom Software Development, Flutter App Development, and Firebase App Development Services.',
+      'Mobile App Development Company',
+      'We helps companies in mobile app development. Manish Software provides iPhone and Android App Development Services. Contact Us to Discuss Your Project.',
       'https://res.cloudinary.com/manish-software/image/upload/v1630483590/website/best-mobile-app-development-company.jpg'
     );
     // this.mediaObservar = this.breakpointObserver.observe([
